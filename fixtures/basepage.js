@@ -4,14 +4,11 @@ const {SGProofLoginpage} = require("../pages/SGProofLoginpage");
 const {SGProoflandingpage} = require("../pages/SGProoflandingpage");
 
 exports.test = base.test.extend({
-    Demohome: async ({page},use)=>{
-    const Demohome = new SGProoflandingpage(page);
+    Demohome: async ({page},use)=>{      
     //Want to perform testbefore code here
-
+    const Demohome = new SGProoflandingpage(page);
     await use(Demohome);
-
     //want to perform testafterall func
-    
 },
 Login: async ({page},use)=>{
     const Login = new SGProofLoginpage(page);
